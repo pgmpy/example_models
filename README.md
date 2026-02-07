@@ -6,3 +6,6 @@ This is a collection of example causal models from various sources. This repo ac
 2. [DAGitty](https://www.dagitty.net/): Collection of DAGs from academic literature.  
      **License:** GNU General Public License v2.0  
      **Reference:** Textor, Johannes, Juliane Hardt, and Sven Knüppel. "DAGitty: a graphical tool for analyzing causal diagrams." Epidemiology 22.5 (2011): 745.  
+3. [bnRep](https://github.com/manueleleonelli/bnRep): Collection of Bayesian Networks from academic literature.  
+     **License:** MIT  
+     **Reference:** Leonelli, M. (2025). bnRep: A repository of Bayesian networks from the academic literature. Neurocomputing, 624, 129502.  
