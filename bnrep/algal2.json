@@ -1,0 +1,88 @@
+{
+  "nodes": ["ChiA", "ChiA_PS", "Colour", "Colour_PS", "Cyanobacteria", "RainSum", "TP", "TP_PS", "WindSpeed"],
+  "arcs": [
+    ["ChiA", "Cyanobacteria"],
+    ["ChiA_PS", "ChiA"],
+    ["Colour", "Cyanobacteria"],
+    ["Colour_PS", "Colour"],
+    ["RainSum", "Colour"],
+    ["TP", "ChiA"],
+    ["TP_PS", "ChiA_PS"],
+    ["TP_PS", "TP"],
+    ["WindSpeed", "ChiA"]
+  ],
+  "cpds": {
+    "ChiA": {
+      "coefficients": {
+        "(Intercept)": [15],
+        "ChiA_PS": [0.33],
+        "TP": [0.47],
+        "WindSpeed": [-5.1]
+      },
+      "variance": [13.69],
+      "parents": ["ChiA_PS", "TP", "WindSpeed"]
+    },
+    "ChiA_PS": {
+      "coefficients": {
+        "(Intercept)": [-2.6],
+        "TP_PS": [0.62]
+      },
+      "variance": [22.09],
+      "parents": ["TP_PS"]
+    },
+    "Colour": {
+      "coefficients": {
+        "(Intercept)": [-7.7],
+        "Colour_PS": [0.81],
+        "RainSum": [0.028]
+      },
+      "variance": [79.21],
+      "parents": ["Colour_PS", "RainSum"]
+    },
+    "Colour_PS": {
+      "coefficients": {
+        "(Intercept)": [41]
+      },
+      "variance": [289],
+      "parents": []
+    },
+    "Cyanobacteria": {
+      "coefficients": {
+        "(Intercept)": [-1.8],
+        "ChiA": [0.17],
+        "Colour": [-0.024]
+      },
+      "variance": [0.5476],
+      "parents": ["ChiA", "Colour"]
+    },
+    "RainSum": {
+      "coefficients": {
+        "(Intercept)": [520]
+      },
+      "variance": [10000],
+      "parents": []
+    },
+    "TP": {
+      "coefficients": {
+        "(Intercept)": [11],
+        "TP_PS": [0.61]
+      },
+      "variance": [14.44],
+      "parents": ["TP_PS"]
+    },
+    "TP_PS": {
+      "coefficients": {
+        "(Intercept)": [30]
+      },
+      "variance": [27.04],
+      "parents": []
+    },
+    "WindSpeed": {
+      "coefficients": {
+        "(Intercept)": [3.6]
+      },
+      "variance": [0.0625],
+      "parents": []
+    }
+  }
+}

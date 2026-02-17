@@ -1,0 +1,144 @@
+{
+  "nodes": ["AEFES", "AKSEN", "CCOLA", "ENJSA", "KERVT", "LKMNH", "MPARK", "ODAS", "PENGD", "TUKAS", "ULKER", "ULUUN", "ZOREN"],
+  "arcs": [
+    ["AEFES", "CCOLA"],
+    ["AEFES", "ENJSA"],
+    ["AEFES", "MPARK"],
+    ["AKSEN", "ENJSA"],
+    ["AKSEN", "MPARK"],
+    ["KERVT", "ENJSA"],
+    ["KERVT", "PENGD"],
+    ["KERVT", "TUKAS"],
+    ["KERVT", "ULKER"],
+    ["LKMNH", "MPARK"],
+    ["LKMNH", "ULUUN"],
+    ["ODAS", "AKSEN"],
+    ["ODAS", "MPARK"],
+    ["ODAS", "ZOREN"],
+    ["PENGD", "TUKAS"],
+    ["TUKAS", "ODAS"],
+    ["ULKER", "CCOLA"],
+    ["ULKER", "MPARK"],
+    ["ULUUN", "KERVT"],
+    ["ZOREN", "AEFES"],
+    ["ZOREN", "AKSEN"],
+    ["ZOREN", "ENJSA"],
+    ["ZOREN", "ULKER"]
+  ],
+  "cpds": {
+    "AEFES": {
+      "coefficients": {
+        "(Intercept)": [0.00135835],
+        "ZOREN": [0.28504]
+      },
+      "variance": [0.0224898],
+      "parents": ["ZOREN"]
+    },
+    "AKSEN": {
+      "coefficients": {
+        "(Intercept)": [0.00340639],
+        "ODAS": [0.232151],
+        "ZOREN": [0.296668]
+      },
+      "variance": [0.0261252],
+      "parents": ["ODAS", "ZOREN"]
+    },
+    "CCOLA": {
+      "coefficients": {
+        "(Intercept)": [0.00152911],
+        "AEFES": [0.351159],
+        "ULKER": [0.225405]
+      },
+      "variance": [0.0206697],
+      "parents": ["AEFES", "ULKER"]
+    },
+    "ENJSA": {
+      "coefficients": {
+        "(Intercept)": [0.000741325],
+        "AEFES": [0.148784],
+        "AKSEN": [0.134633],
+        "KERVT": [0.113066],
+        "ZOREN": [0.184162]
+      },
+      "variance": [0.0201912],
+      "parents": ["AEFES", "AKSEN", "KERVT", "ZOREN"]
+    },
+    "KERVT": {
+      "coefficients": {
+        "(Intercept)": [0.0015836],
+        "ULUUN": [0.284235]
+      },
+      "variance": [0.0293089],
+      "parents": ["ULUUN"]
+    },
+    "LKMNH": {
+      "coefficients": {
+        "(Intercept)": [0.00361286]
+      },
+      "variance": [0.0345702],
+      "parents": []
+    },
+    "MPARK": {
+      "coefficients": {
+        "(Intercept)": [0.0001279],
+        "AEFES": [0.205706],
+        "AKSEN": [0.117322],
+        "LKMNH": [0.29696],
+        "ODAS": [0.0683476],
+        "ULKER": [0.192566]
+      },
+      "variance": [0.02492],
+      "parents": ["AEFES", "AKSEN", "LKMNH", "ODAS", "ULKER"]
+    },
+    "ODAS": {
+      "coefficients": {
+        "(Intercept)": [0.00295516],
+        "TUKAS": [0.324198]
+      },
+      "variance": [0.0335774],
+      "parents": ["TUKAS"]
+    },
+    "PENGD": {
+      "coefficients": {
+        "(Intercept)": [0.00112535],
+        "KERVT": [0.680582]
+      },
+      "variance": [0.0323557],
+      "parents": ["KERVT"]
+    },
+    "TUKAS": {
+      "coefficients": {
+        "(Intercept)": [0.00087602],
+        "KERVT": [0.355931],
+        "PENGD": [0.110216]
+      },
+      "variance": [0.0282039],
+      "parents": ["KERVT", "PENGD"]
+    },
+    "ULKER": {
+      "coefficients": {
+        "(Intercept)": [0.000195145],
+        "KERVT": [0.206911],
+        "ZOREN": [0.191251]
+      },
+      "variance": [0.0204869],
+      "parents": ["KERVT", "ZOREN"]
+    },
+    "ULUUN": {
+      "coefficients": {
+        "(Intercept)": [0.00449469],
+        "LKMNH": [0.235237]
+      },
+      "variance": [0.0397044],
+      "parents": ["LKMNH"]
+    },
+    "ZOREN": {
+      "coefficients": {
+        "(Intercept)": [0.00148704],
+        "ODAS": [0.450508]
+      },
+      "variance": [0.0271039],
+      "parents": ["ODAS"]
+    }
+  }
+}

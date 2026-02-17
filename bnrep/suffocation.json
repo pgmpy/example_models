@@ -1,0 +1,320 @@
+{
+  "nodes": ["N10", "N11", "N12", "N13", "N14", "N16", "N17", "N18", "N20", "N22", "N23", "N24", "N25", "N26", "N27", "N28", "N29", "N30", "N32", "N33", "N34", "N35", "N36", "N37", "N38", "N39", "N4", "N40", "N5", "N8", "OI", "PersonnelSuffocation", "UA", "UP", "US"],
+  "arcs": [
+    ["N10", "OI"],
+    ["N11", "OI"],
+    ["N12", "OI"],
+    ["N13", "OI"],
+    ["N14", "OI"],
+    ["N16", "US"],
+    ["N17", "US"],
+    ["N18", "US"],
+    ["N20", "UA"],
+    ["N22", "UA"],
+    ["N23", "UA"],
+    ["N24", "UA"],
+    ["N25", "UA"],
+    ["N26", "UA"],
+    ["N27", "UA"],
+    ["N28", "UA"],
+    ["N29", "UA"],
+    ["N30", "UA"],
+    ["N32", "UA"],
+    ["N33", "UP"],
+    ["N34", "US"],
+    ["N35", "US"],
+    ["N36", "US"],
+    ["N37", "US"],
+    ["N38", "US"],
+    ["N39", "US"],
+    ["N4", "US"],
+    ["N40", "UP"],
+    ["N5", "UP"],
+    ["N8", "UA"],
+    ["OI", "PersonnelSuffocation"],
+    ["UA", "PersonnelSuffocation"],
+    ["UP", "PersonnelSuffocation"],
+    ["US", "PersonnelSuffocation"]
+  ],
+  "cpds": {
+    "N10": {
+      "coefficients": {
+        "(Intercept)": [0.5028]
+      },
+      "variance": [0.1676],
+      "parents": []
+    },
+    "N11": {
+      "coefficients": {
+        "(Intercept)": [0.3797]
+      },
+      "variance": [0.1266],
+      "parents": []
+    },
+    "N12": {
+      "coefficients": {
+        "(Intercept)": [0.3608]
+      },
+      "variance": [0.1203],
+      "parents": []
+    },
+    "N13": {
+      "coefficients": {
+        "(Intercept)": [1]
+      },
+      "variance": [0.3333],
+      "parents": []
+    },
+    "N14": {
+      "coefficients": {
+        "(Intercept)": [0.238]
+      },
+      "variance": [0.0793],
+      "parents": []
+    },
+    "N16": {
+      "coefficients": {
+        "(Intercept)": [0.9855]
+      },
+      "variance": [0.3285],
+      "parents": []
+    },
+    "N17": {
+      "coefficients": {
+        "(Intercept)": [0.9855]
+      },
+      "variance": [0.3285],
+      "parents": []
+    },
+    "N18": {
+      "coefficients": {
+        "(Intercept)": [0.9855]
+      },
+      "variance": [0.3285],
+      "parents": []
+    },
+    "N20": {
+      "coefficients": {
+        "(Intercept)": [0.5608]
+      },
+      "variance": [0.1869],
+      "parents": []
+    },
+    "N22": {
+      "coefficients": {
+        "(Intercept)": [0.4158]
+      },
+      "variance": [0.1386],
+      "parents": []
+    },
+    "N23": {
+      "coefficients": {
+        "(Intercept)": [0.4158]
+      },
+      "variance": [0.1386],
+      "parents": []
+    },
+    "N24": {
+      "coefficients": {
+        "(Intercept)": [0.4158]
+      },
+      "variance": [0.1386],
+      "parents": []
+    },
+    "N25": {
+      "coefficients": {
+        "(Intercept)": [0.712]
+      },
+      "variance": [0.2373],
+      "parents": []
+    },
+    "N26": {
+      "coefficients": {
+        "(Intercept)": [0.5799]
+      },
+      "variance": [0.1933],
+      "parents": []
+    },
+    "N27": {
+      "coefficients": {
+        "(Intercept)": [0.5509]
+      },
+      "variance": [0.1836],
+      "parents": []
+    },
+    "N28": {
+      "coefficients": {
+        "(Intercept)": [0.4158]
+      },
+      "variance": [0.1386],
+      "parents": []
+    },
+    "N29": {
+      "coefficients": {
+        "(Intercept)": [0.712]
+      },
+      "variance": [0.2373],
+      "parents": []
+    },
+    "N30": {
+      "coefficients": {
+        "(Intercept)": [0.4158]
+      },
+      "variance": [0.1386],
+      "parents": []
+    },
+    "N32": {
+      "coefficients": {
+        "(Intercept)": [0.4738]
+      },
+      "variance": [0.1579],
+      "parents": []
+    },
+    "N33": {
+      "coefficients": {
+        "(Intercept)": [0.4535]
+      },
+      "variance": [0.1512],
+      "parents": []
+    },
+    "N34": {
+      "coefficients": {
+        "(Intercept)": [0.5832]
+      },
+      "variance": [0.1944],
+      "parents": []
+    },
+    "N35": {
+      "coefficients": {
+        "(Intercept)": [0.5687]
+      },
+      "variance": [0.1896],
+      "parents": []
+    },
+    "N36": {
+      "coefficients": {
+        "(Intercept)": [0.5687]
+      },
+      "variance": [0.1896],
+      "parents": []
+    },
+    "N37": {
+      "coefficients": {
+        "(Intercept)": [0.8816]
+      },
+      "variance": [0.2939],
+      "parents": []
+    },
+    "N38": {
+      "coefficients": {
+        "(Intercept)": [0.5687]
+      },
+      "variance": [0.1896],
+      "parents": []
+    },
+    "N39": {
+      "coefficients": {
+        "(Intercept)": [0.5687]
+      },
+      "variance": [0.1896],
+      "parents": []
+    },
+    "N4": {
+      "coefficients": {
+        "(Intercept)": [0.8901]
+      },
+      "variance": [0.2967],
+      "parents": []
+    },
+    "N40": {
+      "coefficients": {
+        "(Intercept)": [0.8671]
+      },
+      "variance": [0.289],
+      "parents": []
+    },
+    "N5": {
+      "coefficients": {
+        "(Intercept)": [0.3579]
+      },
+      "variance": [0.1193],
+      "parents": []
+    },
+    "N8": {
+      "coefficients": {
+        "(Intercept)": [0.5318]
+      },
+      "variance": [0.1773],
+      "parents": []
+    },
+    "OI": {
+      "coefficients": {
+        "(Intercept)": [0],
+        "N10": [0.2026],
+        "N11": [0.153],
+        "N12": [0.1454],
+        "N13": [0.403],
+        "N14": [0.0959]
+      },
+      "variance": [0.067246524657],
+      "parents": ["N10", "N11", "N12", "N13", "N14"]
+    },
+    "PersonnelSuffocation": {
+      "coefficients": {
+        "(Intercept)": [0],
+        "OI": [0.1383],
+        "UA": [0.3455],
+        "UP": [0.0935],
+        "US": [0.4227]
+      },
+      "variance": [0.053855868419771],
+      "parents": ["OI", "UA", "UP", "US"]
+    },
+    "UA": {
+      "coefficients": {
+        "(Intercept)": [0],
+        "N20": [0.0904],
+        "N22": [0.0671],
+        "N23": [0.0671],
+        "N24": [0.0671],
+        "N25": [0.1148],
+        "N26": [0.0935],
+        "N27": [0.0888],
+        "N28": [0.0671],
+        "N29": [0.1148],
+        "N30": [0.0671],
+        "N32": [0.0764],
+        "N8": [0.0858]
+      },
+      "variance": [0.016266837683],
+      "parents": ["N20", "N22", "N23", "N24", "N25", "N26", "N27", "N28", "N29", "N30", "N32", "N8"]
+    },
+    "UP": {
+      "coefficients": {
+        "(Intercept)": [0],
+        "N33": [0.2702],
+        "N40": [0.5166],
+        "N5": [0.2132]
+      },
+      "variance": [0.09358854332],
+      "parents": ["N33", "N40", "N5"]
+    },
+    "US": {
+      "coefficients": {
+        "(Intercept)": [0],
+        "N16": [0.1299],
+        "N17": [0.1299],
+        "N18": [0.1299],
+        "N34": [0.0769],
+        "N35": [0.075],
+        "N36": [0.075],
+        "N37": [0.1162],
+        "N38": [0.075],
+        "N39": [0.075],
+        "N4": [0.1173]
+      },
+      "variance": [0.030095691098],
+      "parents": ["N16", "N17", "N18", "N34", "N35", "N36", "N37", "N38", "N39", "N4"]
+    }
+  }
+}

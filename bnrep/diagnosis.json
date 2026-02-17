@@ -1,0 +1,149 @@
+{
+  "nodes": ["X1", "X10", "X11", "X12", "X13", "X14", "X15", "X16", "X2", "X3", "X4", "X5", "X6", "X7", "X8", "X9"],
+  "arcs": [
+    ["X1", "X2"],
+    ["X1", "X3"],
+    ["X1", "X4"],
+    ["X1", "X5"],
+    ["X1", "X6"],
+    ["X1", "X7"],
+    ["X16", "X12"],
+    ["X3", "X12"],
+    ["X3", "X13"],
+    ["X3", "X14"],
+    ["X3", "X15"],
+    ["X8", "X1"],
+    ["X8", "X10"],
+    ["X8", "X11"],
+    ["X9", "X1"]
+  ],
+  "cpds": {
+    "X1": {
+      "coefficients": {
+        "(Intercept)": [2],
+        "X8": [2.4],
+        "X9": [0.8]
+      },
+      "variance": [100],
+      "parents": ["X8", "X9"]
+    },
+    "X10": {
+      "coefficients": {
+        "(Intercept)": [1],
+        "X8": [0.4]
+      },
+      "variance": [100],
+      "parents": ["X8"]
+    },
+    "X11": {
+      "coefficients": {
+        "(Intercept)": [0.56],
+        "X8": [0.15]
+      },
+      "variance": [100],
+      "parents": ["X8"]
+    },
+    "X12": {
+      "coefficients": {
+        "(Intercept)": [0],
+        "X16": [0.8],
+        "X3": [0.51]
+      },
+      "variance": [100],
+      "parents": ["X16", "X3"]
+    },
+    "X13": {
+      "coefficients": {
+        "(Intercept)": [0],
+        "X3": [1.3]
+      },
+      "variance": [100],
+      "parents": ["X3"]
+    },
+    "X14": {
+      "coefficients": {
+        "(Intercept)": [1],
+        "X3": [0.4]
+      },
+      "variance": [100],
+      "parents": ["X3"]
+    },
+    "X15": {
+      "coefficients": {
+        "(Intercept)": [0.028],
+        "X3": [1.3]
+      },
+      "variance": [100],
+      "parents": ["X3"]
+    },
+    "X16": {
+      "coefficients": {
+        "(Intercept)": [0]
+      },
+      "variance": [100],
+      "parents": []
+    },
+    "X2": {
+      "coefficients": {
+        "(Intercept)": [0],
+        "X1": [0.6]
+      },
+      "variance": [100],
+      "parents": ["X1"]
+    },
+    "X3": {
+      "coefficients": {
+        "(Intercept)": [0.05],
+        "X1": [0.22]
+      },
+      "variance": [100],
+      "parents": ["X1"]
+    },
+    "X4": {
+      "coefficients": {
+        "(Intercept)": [1],
+        "X1": [0.4]
+      },
+      "variance": [100],
+      "parents": ["X1"]
+    },
+    "X5": {
+      "coefficients": {
+        "(Intercept)": [0.062],
+        "X1": [0.16]
+      },
+      "variance": [100],
+      "parents": ["X1"]
+    },
+    "X6": {
+      "coefficients": {
+        "(Intercept)": [0],
+        "X1": [0.6]
+      },
+      "variance": [100],
+      "parents": ["X1"]
+    },
+    "X7": {
+      "coefficients": {
+        "(Intercept)": [0],
+        "X1": [0.7]
+      },
+      "variance": [100],
+      "parents": ["X1"]
+    },
+    "X8": {
+      "coefficients": {
+        "(Intercept)": [2]
+      },
+      "variance": [100],
+      "parents": []
+    },
+    "X9": {
+      "coefficients": {
+        "(Intercept)": [0]
+      },
+      "variance": [100],
+      "parents": []
+    }
+  }
+}

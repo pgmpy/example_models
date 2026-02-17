@@ -1,0 +1,91 @@
+{
+  "nodes": ["aoa", "area", "genre_disp", "log_freq", "log_range", "prev_heard", "prev_used", "social_disp"],
+  "arcs": [
+    ["aoa", "genre_disp"],
+    ["aoa", "prev_heard"],
+    ["aoa", "social_disp"],
+    ["area", "social_disp"],
+    ["log_freq", "genre_disp"],
+    ["log_freq", "log_range"],
+    ["log_range", "genre_disp"],
+    ["prev_heard", "area"],
+    ["prev_heard", "genre_disp"],
+    ["prev_heard", "log_freq"],
+    ["prev_heard", "prev_used"],
+    ["prev_used", "area"],
+    ["prev_used", "log_freq"],
+    ["prev_used", "log_range"]
+  ],
+  "cpds": {
+    "aoa": {
+      "coefficients": {
+        "(Intercept)": [1.116867e-16]
+      },
+      "variance": [1],
+      "parents": []
+    },
+    "area": {
+      "coefficients": {
+        "(Intercept)": [-9.049293e-17],
+        "prev_heard": [1.279619],
+        "prev_used": [-0.5456541]
+      },
+      "variance": [0.33305976103689],
+      "parents": ["prev_heard", "prev_used"]
+    },
+    "genre_disp": {
+      "coefficients": {
+        "(Intercept)": [-1.072147e-16],
+        "aoa": [0.1493371],
+        "log_freq": [0.1369712],
+        "log_range": [0.2290909],
+        "prev_heard": [0.4137189]
+      },
+      "variance": [0.66082868364769],
+      "parents": ["aoa", "log_freq", "log_range", "prev_heard"]
+    },
+    "log_freq": {
+      "coefficients": {
+        "(Intercept)": [2.165844e-16],
+        "prev_heard": [-0.2389613],
+        "prev_used": [0.6522685]
+      },
+      "variance": [0.80347326086889],
+      "parents": ["prev_heard", "prev_used"]
+    },
+    "log_range": {
+      "coefficients": {
+        "(Intercept)": [-1.000049e-16],
+        "log_freq": [0.453501],
+        "prev_used": [0.2927989]
+      },
+      "variance": [0.595341869056],
+      "parents": ["log_freq", "prev_used"]
+    },
+    "prev_heard": {
+      "coefficients": {
+        "(Intercept)": [2.507937e-17],
+        "aoa": [-0.422608]
+      },
+      "variance": [0.823051757284],
+      "parents": ["aoa"]
+    },
+    "prev_used": {
+      "coefficients": {
+        "(Intercept)": [-1.115367e-17],
+        "prev_heard": [0.9072148]
+      },
+      "variance": [0.17731670388201],
+      "parents": ["prev_heard"]
+    },
+    "social_disp": {
+      "coefficients": {
+        "(Intercept)": [-2.368133e-16],
+        "aoa": [-0.1212857],
+        "area": [0.604543]
+      },
+      "variance": [0.57696283981249],
+      "parents": ["aoa", "area"]
+    }
+  }
+}

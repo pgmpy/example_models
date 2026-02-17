@@ -1,0 +1,41 @@
+{
+  "nodes": ["X1", "X2", "X3", "X4"],
+  "arcs": [
+    ["X1", "X4"],
+    ["X2", "X4"],
+    ["X4", "X3"]
+  ],
+  "cpds": {
+    "X1": {
+      "coefficients": {
+        "(Intercept)": [2.4]
+      },
+      "variance": [0.8],
+      "parents": []
+    },
+    "X2": {
+      "coefficients": {
+        "(Intercept)": [1.8]
+      },
+      "variance": [0.6],
+      "parents": []
+    },
+    "X3": {
+      "coefficients": {
+        "(Intercept)": [2.1],
+        "X4": [1.2]
+      },
+      "variance": [0.9],
+      "parents": ["X4"]
+    },
+    "X4": {
+      "coefficients": {
+        "(Intercept)": [0.2],
+        "X1": [1.5],
+        "X2": [2.6]
+      },
+      "variance": [1.1],
+      "parents": ["X1", "X2"]
+    }
+  }
+}

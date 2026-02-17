@@ -1,0 +1,159 @@
+{
+  "nodes": ["PtfmPitch", "PtfmRoll", "PtfmSurge", "PtfmSway", "TTDspFA", "TTDspPtch", "TTDspRoll", "TTDspSS", "TwrBsFxt", "TwrBsFyt", "TwrBsMxt", "TwrBsMyt", "YawBrFxp", "YawBrFyp", "YawBrMxp", "YawBrMyp"],
+  "arcs": [
+    ["PtfmPitch", "TTDspPtch"],
+    ["PtfmRoll", "TTDspRoll"],
+    ["PtfmSurge", "TTDspFA"],
+    ["TTDspSS", "YawBrFyp"],
+    ["TwrBsFxt", "PtfmSurge"],
+    ["TwrBsFxt", "TTDspFA"],
+    ["TwrBsFxt", "YawBrFxp"],
+    ["TwrBsFyt", "PtfmSway"],
+    ["TwrBsFyt", "TTDspSS"],
+    ["TwrBsFyt", "YawBrFyp"],
+    ["TwrBsMxt", "PtfmRoll"],
+    ["TwrBsMxt", "TTDspRoll"],
+    ["TwrBsMxt", "YawBrMxp"],
+    ["TwrBsMyt", "TTDspPtch"],
+    ["YawBrFxp", "PtfmSurge"],
+    ["YawBrFxp", "TTDspFA"],
+    ["YawBrMxp", "PtfmSurge"],
+    ["YawBrMxp", "TTDspRoll"],
+    ["YawBrMyp", "PtfmSway"],
+    ["YawBrMyp", "TTDspPtch"]
+  ],
+  "cpds": {
+    "PtfmPitch": {
+      "coefficients": {
+        "(Intercept)": [2.135117]
+      },
+      "variance": [1.742502961521],
+      "parents": []
+    },
+    "PtfmRoll": {
+      "coefficients": {
+        "(Intercept)": [0.0938534],
+        "TwrBsMxt": [3.207186e-05]
+      },
+      "variance": [0.08012613390336],
+      "parents": ["TwrBsMxt"]
+    },
+    "PtfmSurge": {
+      "coefficients": {
+        "(Intercept)": [11.9668188378],
+        "TwrBsFxt": [0.0104914489],
+        "YawBrFxp": [-0.0113494099],
+        "YawBrMxp": [-0.0006205644]
+      },
+      "variance": [7.542405366336],
+      "parents": ["TwrBsFxt", "YawBrFxp", "YawBrMxp"]
+    },
+    "PtfmSway": {
+      "coefficients": {
+        "(Intercept)": [-0.8072005],
+        "TwrBsFyt": [0.003894343],
+        "YawBrMyp": [-3.246104e-05]
+      },
+      "variance": [0.24176230126489],
+      "parents": ["TwrBsFyt", "YawBrMyp"]
+    },
+    "TTDspFA": {
+      "coefficients": {
+        "(Intercept)": [0.004240294],
+        "PtfmSurge": [1.41667e-07],
+        "TwrBsFxt": [9.849973e-05],
+        "YawBrFxp": [0.0003382452]
+      },
+      "variance": [0.0003527646509209],
+      "parents": ["PtfmSurge", "TwrBsFxt", "YawBrFxp"]
+    },
+    "TTDspPtch": {
+      "coefficients": {
+        "(Intercept)": [0.008012841],
+        "PtfmPitch": [0.008012841],
+        "TwrBsMyt": [6.906587e-06],
+        "YawBrMyp": [1.207271e-05]
+      },
+      "variance": [0.0001158128954896],
+      "parents": ["PtfmPitch", "TwrBsMyt", "YawBrMyp"]
+    },
+    "TTDspRoll": {
+      "coefficients": {
+        "(Intercept)": [-0.01253034],
+        "PtfmRoll": [-0.006269582],
+        "TwrBsMxt": [7.226258e-06],
+        "YawBrMxp": [1.501368e-05]
+      },
+      "variance": [2.75198371717861e-05],
+      "parents": ["PtfmRoll", "TwrBsMxt", "YawBrMxp"]
+    },
+    "TTDspSS": {
+      "coefficients": {
+        "(Intercept)": [-0.0432733538],
+        "TwrBsFyt": [0.00037893559]
+      },
+      "variance": [0.00015402795664],
+      "parents": ["TwrBsFyt"]
+    },
+    "TwrBsFxt": {
+      "coefficients": {
+        "(Intercept)": [529.4068]
+      },
+      "variance": [220617.05666121],
+      "parents": []
+    },
+    "TwrBsFyt": {
+      "coefficients": {
+        "(Intercept)": [-74.07645]
+      },
+      "variance": [7502.0941300369],
+      "parents": []
+    },
+    "TwrBsMxt": {
+      "coefficients": {
+        "(Intercept)": [9756.298]
+      },
+      "variance": [42968156.1001],
+      "parents": []
+    },
+    "TwrBsMyt": {
+      "coefficients": {
+        "(Intercept)": [39630.32]
+      },
+      "variance": [1083667803.1921],
+      "parents": []
+    },
+    "YawBrFxp": {
+      "coefficients": {
+        "(Intercept)": [26.5887336],
+        "TwrBsFxt": [0.7626502]
+      },
+      "variance": [5814.3248029584],
+      "parents": ["TwrBsFxt"]
+    },
+    "YawBrFyp": {
+      "coefficients": {
+        "(Intercept)": [95.9430265],
+        "TTDspSS": [2443.0219893],
+        "TwrBsFyt": [-0.1350949]
+      },
+      "variance": [196.63611529],
+      "parents": ["TTDspSS", "TwrBsFyt"]
+    },
+    "YawBrMxp": {
+      "coefficients": {
+        "(Intercept)": [4071.039],
+        "TwrBsMxt": [0.02512427]
+      },
+      "variance": [271990.62033984],
+      "parents": ["TwrBsMxt"]
+    },
+    "YawBrMyp": {
+      "coefficients": {
+        "(Intercept)": [2607.097]
+      },
+      "variance": [3984642.768649],
+      "parents": []
+    }
+  }
+}

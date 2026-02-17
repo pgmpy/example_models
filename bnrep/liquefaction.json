@@ -1,0 +1,107 @@
+{
+  "nodes": ["Ds", "GWT", "lnamax", "lnR", "lnt", "Mw", "N160", "S", "Sigmav", "Ts"],
+  "arcs": [
+    ["Ds", "S"],
+    ["Ds", "Sigmav"],
+    ["GWT", "S"],
+    ["GWT", "Sigmav"],
+    ["lnamax", "S"],
+    ["lnR", "lnamax"],
+    ["lnR", "lnt"],
+    ["lnR", "S"],
+    ["lnt", "S"],
+    ["Mw", "lnamax"],
+    ["Mw", "lnt"],
+    ["Mw", "S"],
+    ["N160", "S"],
+    ["Sigmav", "N160"],
+    ["Ts", "S"]
+  ],
+  "cpds": {
+    "Ds": {
+      "coefficients": {
+        "(Intercept)": [3.7119]
+      },
+      "variance": [6.80724584848485],
+      "parents": []
+    },
+    "GWT": {
+      "coefficients": {
+        "(Intercept)": [2.176688]
+      },
+      "variance": [1.55880000552727],
+      "parents": []
+    },
+    "lnamax": {
+      "coefficients": {
+        "(Intercept)": [-3.32024844335566],
+        "lnR": [-0.307873843121311],
+        "Mw": [0.41908404951763]
+      },
+      "variance": [0.192375718090601],
+      "parents": ["lnR", "Mw"]
+    },
+    "lnR": {
+      "coefficients": {
+        "(Intercept)": [4.23474846127901]
+      },
+      "variance": [1.06481482010627],
+      "parents": []
+    },
+    "lnt": {
+      "coefficients": {
+        "(Intercept)": [-8.45694672825036],
+        "lnR": [-0.729126859129163],
+        "Mw": [1.91326821221389]
+      },
+      "variance": [0.109109405158012],
+      "parents": ["lnR", "Mw"]
+    },
+    "Mw": {
+      "coefficients": {
+        "(Intercept)": [7.68200000000001]
+      },
+      "variance": [0.583713131313131],
+      "parents": []
+    },
+    "N160": {
+      "coefficients": {
+        "(Intercept)": [9.21883748110725],
+        "Sigmav": [0.00907224603603644]
+      },
+      "variance": [14.6420904097046],
+      "parents": ["Sigmav"]
+    },
+    "S": {
+      "coefficients": {
+        "(Intercept)": [-0.0192162209303229],
+        "Ds": [-0.00832616014865797],
+        "GWT": [0.000777814682337057],
+        "lnamax": [0.0938939306816531],
+        "lnR": [-0.00306747566719272],
+        "lnt": [-0.010246146273104],
+        "Mw": [0.0534088869851398],
+        "N160": [-0.00871964886165512],
+        "Ts": [0.0164373806481002]
+      },
+      "variance": [0.00684309754659266],
+      "parents": ["Ds", "GWT", "lnamax", "lnR", "lnt", "Mw", "N160", "Ts"]
+    },
+    "Sigmav": {
+      "coefficients": {
+        "(Intercept)": [6.3098805176456],
+        "Ds": [8.65954393507753],
+        "GWT": [8.63429241267473]
+      },
+      "variance": [169.144221232264],
+      "parents": ["Ds", "GWT"]
+    },
+    "Ts": {
+      "coefficients": {
+        "(Intercept)": [7.3234]
+      },
+      "variance": [19.4033014545454],
+      "parents": []
+    }
+  }
+}

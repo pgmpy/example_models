@@ -1,0 +1,131 @@
+{
+  "nodes": ["Card", "Reports", "Age", "Income", "Share", "Expenditure", "Owner", "Selfemp", "Dependents", "Months", "Majorcards", "Active"],
+  "arcs": [
+    ["Card", "Reports"],
+    ["Card", "Share"],
+    ["Card", "Owner"],
+    ["Card", "Majorcards"],
+    ["Age", "Income"],
+    ["Age", "Share"],
+    ["Age", "Owner"],
+    ["Age", "Months"],
+    ["Income", "Expenditure"],
+    ["Income", "Selfemp"],
+    ["Income", "Dependents"],
+    ["Income", "Majorcards"],
+    ["Income", "Active"],
+    ["Share", "Expenditure"],
+    ["Owner", "Income"],
+    ["Owner", "Dependents"],
+    ["Owner", "Active"],
+    ["Months", "Owner"],
+    ["Majorcards", "Active"],
+    ["Active", "Reports"]
+  ],
+  "cpds": {
+    "Card": {
+      "coefficients": {
+        "(Intercept)": [0.775587566338135]
+      },
+      "variance": [0.174183550558484],
+      "parents": []
+    },
+    "Reports": {
+      "coefficients": {
+        "(Intercept)": [1.27042131543956],
+        "Card": [-1.52254735864156],
+        "Active": [0.0524304077175797]
+      },
+      "variance": [1.33248473025205],
+      "parents": ["Card", "Active"]
+    },
+    "Age": {
+      "coefficients": {
+        "(Intercept)": [33.2131032549659]
+      },
+      "variance": [102.876050120015],
+      "parents": []
+    },
+    "Income": {
+      "coefficients": {
+        "(Intercept)": [1.6922401699845],
+        "Age": [0.0396322368121011],
+        "Owner": [0.81007553939645]
+      },
+      "variance": [2.43060281119544],
+      "parents": ["Age", "Owner"]
+    },
+    "Share": {
+      "coefficients": {
+        "(Intercept)": [0.036391289219463],
+        "Card": [0.0880188466837473],
+        "Age": [-0.00108166463383845]
+      },
+      "variance": [0.00750167212033998],
+      "parents": ["Card", "Age"]
+    },
+    "Expenditure": {
+      "coefficients": {
+        "(Intercept)": [-161.514054912239],
+        "Income": [52.6677840700376],
+        "Share": [2463.53664138429]
+      },
+      "variance": [14053.5780005114],
+      "parents": ["Income", "Share"]
+    },
+    "Owner": {
+      "coefficients": {
+        "(Intercept)": [-0.265170142568528],
+        "Card": [0.175729766661258],
+        "Age": [0.0159375978980603],
+        "Months": [0.000724193422780255]
+      },
+      "variance": [0.206518857140747],
+      "parents": ["Card", "Age", "Months"]
+    },
+    "Selfemp": {
+      "coefficients": {
+        "(Intercept)": [0.0124273370812359],
+        "Income": [0.0168077274438035]
+      },
+      "variance": [0.0635181610223825],
+      "parents": ["Income"]
+    },
+    "Dependents": {
+      "coefficients": {
+        "(Intercept)": [0.137149008986202],
+        "Income": [0.178844201299536],
+        "Owner": [0.578697741529175]
+      },
+      "variance": [1.32795386698979],
+      "parents": ["Income", "Owner"]
+    },
+    "Months": {
+      "coefficients": {
+        "(Intercept)": [-39.4412927387273],
+        "Age": [2.85155286459752]
+      },
+      "variance": [3558.12233741042],
+      "parents": ["Age"]
+    },
+    "Majorcards": {
+      "coefficients": {
+        "(Intercept)": [0.671345426287243],
+        "Card": [0.0912752579655268],
+        "Income": [0.0223298793850125]
+      },
+      "variance": [0.146511702283392],
+      "parents": ["Card", "Income"]
+    },
+    "Active": {
+      "coefficients": {
+        "(Intercept)": [3.23943376805557],
+        "Income": [0.345808846307825],
+        "Owner": [3.03113288530365],
+        "Majorcards": [1.53996015363929]
+      },
+      "variance": [36.1199113246988],
+      "parents": ["Income", "Owner", "Majorcards"]
+    }
+  }
+}

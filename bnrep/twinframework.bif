@@ -1,0 +1,56 @@
+network unknown {
+}
+variable CampusActivities {
+  type discrete [ 2 ] { Campus activities, No campus activities };
+}
+variable EquipmentStatus {
+  type discrete [ 2 ] { Good equipment, Equipment abnormality };
+}
+variable PersonnelType {
+  type discrete [ 2 ] { Student, Social personnel };
+}
+variable SocialActivities {
+  type discrete [ 2 ] { Active, No activity };
+}
+variable Time {
+  type discrete [ 2 ] { Non-working hours, Working hours };
+}
+variable UsingPlayground {
+  type discrete [ 2 ] { Use, Not in use };
+}
+variable Weather {
+  type discrete [ 2 ] { Fine weather, Bad weather };
+}
+probability ( CampusActivities | Weather ) {
+  (Fine weather) 0.7, 0.3;
+  (Bad weather) 0.5, 0.5;
+}
+probability ( EquipmentStatus ) {
+  table 0.95, 0.05;
+}
+probability ( PersonnelType | CampusActivities, SocialActivities, Time ) {
+  (Campus activities, Active, Non-working hours) 0.7, 0.3;
+  (No campus activities, Active, Non-working hours) 0.4, 0.6;
+  (Campus activities, No activity, Non-working hours) 0.8, 0.2;
+  (No campus activities, No activity, Non-working hours) 0.5, 0.5;
+  (Campus activities, Active, Working hours) 0.85, 0.15;
+  (No campus activities, Active, Working hours) 0.7, 0.3;
+  (Campus activities, No activity, Working hours) 0.8, 0.2;
+  (No campus activities, No activity, Working hours) 0.95, 0.05;
+}
+probability ( SocialActivities | Weather ) {
+  (Fine weather) 0.7, 0.3;
+  (Bad weather) 0.3, 0.7;
+}
+probability ( Time ) {
+  table 0.38, 0.62;
+}
+probability ( UsingPlayground | EquipmentStatus, PersonnelType ) {
+  (Good equipment, Student) 0.9, 0.1;
+  (Equipment abnormality, Student) 0.5, 0.5;
+  (Good equipment, Social personnel) 0.4, 0.6;
+  (Equipment abnormality, Social personnel) 0.2, 0.8;
+}
+probability ( Weather ) {
+  table 0.75, 0.25;
+}
